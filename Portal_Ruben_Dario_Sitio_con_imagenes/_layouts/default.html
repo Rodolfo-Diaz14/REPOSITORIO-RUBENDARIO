@@ -1,0 +1,28 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="nav">
+        <a href="{{ '/biografia/' | relative_url }}">Biografía</a>
+        <a href="{{ '/obras/' | relative_url }}">Obras</a>
+        <a href="{{ '/audiovisuales/' | relative_url }}">Audiovisuales</a>
+        <a href="{{ '/estudios/' | relative_url }}">Estudios</a>
+        <a href="{{ '/material/' | relative_url }}">Material educativo</a>
+        <a href="{{ '/recursos/' | relative_url }}">Recursos</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container content">{{ content }}</main>
+  <footer class="site-footer"><div class="container"><p>© {{ site.time | date: '%Y' }} — {{ site.title }}.</p></div></footer>
+</body>
+</html>

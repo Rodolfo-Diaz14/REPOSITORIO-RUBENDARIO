@@ -1,0 +1,13 @@
+
+title: "Rubén Darío — Repositorio Digital"
+description: "Portal con biografía, obras, recursos audiovisuales y material educativo sobre Rubén Darío."
+markdown: kramdown
+highlighter: rouge
+include:
+  - assets
+  - biografia
+  - obras
+  - audiovisuales
+  - estudios
+  - material
+  - recursos
